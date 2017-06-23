@@ -79,6 +79,10 @@ img.logomarca {
 	
 }
 
+.esconde_mobile {
+	display: none;
+}
+
 /* Inicio Menu Mobile */
 
 a, a:active, a:visited {
@@ -136,5 +140,111 @@ a:hover {
 					transition:height 2s;
 }
 
-
 /* Fim Menu Mobile */
+
+/* Breakpoint 30 em - 480px */
+
+@media all and (min-width: 30em) {
+	.main-page {
+		background: #00a859;
+	}
+
+	.principal {
+		width: 70%;
+		padding: 0;
+		float: right; 
+	}
+
+	.auxiliar {
+		width: 70%;
+		float:right;
+		padding: 0;
+	}
+
+	.navegacao {
+		width: 30%;
+		float: left;
+		height: 15em;
+	}
+
+	.rodape {
+		clear: both;
+	}
+
+	.principal header, .principal div.bloco, .auxiliar article {
+		padding: 0 .5em;
+	}
+
+	.navegacao li:first-child {
+		border-top: 1px solid #ddd;
+	}
+
+	.navegacao ul li a {
+		padding-left: .5em;
+		padding-right: .5em;
+	}
+
+	header.topo {
+		height: 142px;
+	}
+
+	img.logomarca {
+		position: absolute;
+		left: 50%;
+		top: 20px;
+		margin-left: -88px;
+	}
+
+	/*.menu-icon {
+		text-indent: -1000em;
+		height: 0;
+		line-height: 0;
+	} */
+
+	.esconde_480px {
+		display: none;
+	}
+
+	.esconde_mobile {
+		display: block;
+	}
+}
+
+/* Breakpoint 62.5em - 1000px */ 
+@media all and (min-width: 62.5em) {
+
+	.main-page {
+		background: none;
+	}
+
+	.principal {
+		width: 60%;
+		float: left;
+	}
+
+	.auxiliar {
+		width: 25%;
+	}
+
+	.navegacao {
+		width: 15%;
+	}
+}
+
+
+/* Breakpoint 75em - 1200px */ 
+@media all and (min-width: 75em) {
+
+	.geral {
+		max-width: 100em;
+		margin: 0 auto;
+	}
+
+	.principal {
+		width: 57%;
+		margin: 5px 1.5%;
+		border-radius: 10px;
+	}
+
+
+}

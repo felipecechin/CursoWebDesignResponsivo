@@ -154,3 +154,179 @@ nav.navegacao {
 }
 
 /* Fim Slide Show*/
+
+/* Início da Busca */
+form {
+	position: relative;
+}
+.busca {
+	width: 100%;
+	height: 25px;
+	text-align: center;
+	background: #D5DE37;
+	margin: 5px 0;
+}
+
+.busca input[type="search"] {
+	width: 98%;
+	height: 15px;
+	font-size: 15px;
+	border: none;
+	margin-top: 5px;
+	background-color: #D5DE37;
+	color: #FBFCEB;
+}
+
+.busca input[type="submit"] {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 6px;
+	right: 1.5%;
+	text-indent: -9999px;
+	cursor: pointer;
+	border: none;
+	background: url('../img/lupa.png') no-repeat;
+}
+/* Fim da Busca */
+
+/* Início das Notícias */
+.noticia {
+	margin-top: 10px;
+	padding: 10px 0px;
+	border-top: 1px solid #fbb718;
+}
+
+.noticia h1 {
+	font-size: 20px;
+	color: #fbb718;
+	margin: 2px 6px 0;
+}
+
+.caixa {
+	margin: 20px 0;
+	padding: 0 2px;
+}
+
+.caixa figure {
+	margin: 0;
+}
+
+.caixa h2 {
+	font-size: 16px;
+	color: #fbb718;
+	margin: 2px 6px 0;
+}
+
+.caixa p {
+	font-size: 12px;
+	color: #333;
+}
+
+.caixa a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #555;
+}
+
+.caixa a:hover {
+	text-decoration: underline;
+}
+
+.caixa figure img {
+	width: 100%;
+}
+/* Fim das Notícias */
+
+/* Início Informações Index*/
+.informacao {
+	background: #FFDD26;
+	padding: 10px 0;
+}
+
+.info h2 {
+	color: #0072B9;
+}
+
+.info figure img {
+	display: none;
+}
+/* Fim Informações Index */
+
+/* Início do Rodapé */
+footer {
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	background: url(../img/footer.jpg) no-repeat center 0;
+	height: 60px;
+}
+
+footer p {
+	padding: 18px;
+}
+/* Fim do Rodapé */
+
+@media screen and (min-width: 480px) {
+	.noti figure {
+		float: left;
+		width: 25%;
+		margin-right: 20px;
+	}
+
+	.noti figure img {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	.noti {
+		float: left;
+		width: 31%;
+	}
+	.noti:nth-child(3) {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.noti:nth-child(2) {
+		margin-left: 1%;
+	}
+
+	.noti figure {
+		float: left;
+		width: 100%;
+		margin-right: 0px;
+	}
+
+	.informacao {
+		border-radius: 10px;
+		clear: both;
+		float: left;
+		margin-bottom: 10px;
+	}
+
+	.info {
+		float: left;
+		width: 31%;
+	}
+	.info:nth-child(2) {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.info:first-child {
+		margin-left: 1%;
+	}
+
+	.info figure img {
+		display: block;
+		width: 100%;
+		border-radius: 10px;
+		padding-bottom: 5px;
+	}
+	footer {
+		clear: both;
+	}
+}
